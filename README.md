@@ -32,5 +32,6 @@ Eclipse IDE Download: https://www.eclipse.org/eclipseide/, and getting started: 
 
 ## Lecture and homework
 
-All lectures (time-stamped) can be find under
-Also check your homework assignment (time-stamped) under
+All lectures (time-stamped) can be find under https://github.com/makeableclub/ap-cs-a/tree/master/classes/lecture
+
+Also check your homework assignment (time-stamped) under https://github.com/makeableclub/ap-cs-a/tree/master/classes/homework
