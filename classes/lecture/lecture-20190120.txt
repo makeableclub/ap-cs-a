@@ -1,0 +1,13 @@
+1. Java subset
+https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-java-subset.pdf
+
+2. object-oriented program
+https://en.wikipedia.org/wiki/Object-oriented_programming
+
+http://www.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html
+properties (fields, variables), behaviors (methods), relationships: composition(has-a), inheritance(is-a)
+
+abstraction, encapsulation, inheritance, polymorphism
+https://www.edureka.co/blog/object-oriented-programming/
+
+https://docs.oracle.com/javase/tutorial/java/concepts/index.html

@@ -1,0 +1,23 @@
+1. course description
+https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-course-description.pdf
+
+2. class contents & expectation
+textbook:
+practice book:
+lecture, homework (reading, practice)
+
+3. AP exam
+content, format, time, score
+Past free-responses:
+https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam
+Need more materials for multi-choice questions!!
+
+4. computer setup
+Open terminal: which java 
+JDK, IDE
+
+5. create class and program
+
+6. Java subset
+https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-java-subset.pdf
+https://secure-media.collegeboard.org/digitalServices/pdf/ap/explore-ap/ap-computer-science-a-2014-java-quick-reference.pdf

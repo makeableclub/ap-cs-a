@@ -1,6 +1,6 @@
 # Course Content for AP Computer Science A
 
-## essential links
+## Essential Links
 AP Students: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a
 
 AP Central: https://apcentral.collegeboard.org/courses/ap-computer-science-a?course=ap-computer-science-a
@@ -8,6 +8,8 @@ AP Central: https://apcentral.collegeboard.org/courses/ap-computer-science-a?cou
 Course description: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-course-description.pdf
 
 Java subset: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-java-subset.pdf
+
+Java Quick Reference: https://apcentral.collegeboard.org/pdf/ap-computer-science-a-2014-java-quick-reference.pdf
 
 Lab exercises: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/course-details/lab-requirements
 
@@ -17,7 +19,6 @@ Exam tips: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/exa
 
 
 ## Java and IDE
-Java Quick Reference: https://apcentral.collegeboard.org/pdf/ap-computer-science-a-2014-java-quick-reference.pdf
 
 Check if your system has Java installed already by:
 ```
@@ -29,4 +30,7 @@ If it does not find it, please download Java SE JDK8 here: https://www.oracle.co
 
 Eclipse IDE Download: https://www.eclipse.org/eclipseide/, and getting started: https://www.eclipse.org/getting_started/
 
+## Lecture and homework
 
+All lectures (time-stamped) can be find under
+Also check your homework assignment (time-stamped) under

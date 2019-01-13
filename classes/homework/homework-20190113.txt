@@ -1,0 +1,9 @@
+1. Readings:
+course description
+review links mentioned in lecture
+
+2. Exercises:
+sample multi-choice (page 18 in course description doc)
+
+Lab exercise #1: Magpie
+http://apcs.mathorama.com/index.php?n=Main.MagpieLab
