@@ -9,26 +9,34 @@ Course description: https://secure-media.collegeboard.org/digitalServices/pdf/ap
 
 Java subset: https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-java-subset.pdf
 
-Java Quick Reference: https://apcentral.collegeboard.org/pdf/ap-computer-science-a-2014-java-quick-reference.pdf
-
 Lab exercises: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/course-details/lab-requirements
 
 Exam practice: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/exam-practice
 
 Exam tips: https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/exam-tips
 
+Barron's AP Computer Science textbook: http://www.mrpudaloff.com/uploads/1/4/0/1/14010214/barrons_ap_computer_science_2008-2009_1.pdf
 
-## Java and IDE
+## JDK Document
 
-Check if your system has Java installed already by:
-```
-which java
-java -version
-```
+Java Quick Reference: https://apcentral.collegeboard.org/pdf/ap-computer-science-a-2014-java-quick-reference.pdf
 
-If it does not find it, please download Java SE JDK8 here: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+More detailed documentation:
 
-Eclipse IDE Download: https://www.eclipse.org/eclipseide/, and getting started: https://www.eclipse.org/getting_started/
+Object: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
+
+Integer: https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
+
+Double: https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html
+
+String: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+
+Math: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+
+List: https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+
+ArrayList: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
 
 ## Lecture and homework
 

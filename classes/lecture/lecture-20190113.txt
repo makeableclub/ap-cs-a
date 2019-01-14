@@ -12,9 +12,14 @@ Past free-responses:
 https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam
 Need more materials for multi-choice questions!!
 
-4. computer setup
-Open terminal: which java
-JDK, IDE
+4. computer setup: JDK, Eclispe IDE
+Check if your system has Java installed already by:
+which java
+java -version
+
+If it does not find it, please download Java SE JDK8 here: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Eclipse IDE Download: https://www.eclipse.org/eclipseide/, and getting started: https://www.eclipse.org/getting_started/
 
 5. create class and program in Eclipse
 Student (name, grade, age) class
