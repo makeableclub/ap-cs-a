@@ -1,9 +1,11 @@
-1. Readings:
+1. Readings
 course description
 review links mentioned in lecture
 
-2. Exercises:
-sample multi-choice (page 18 in course description doc)
+2. Practice
+https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-course-description.pdf
+Sample multi-choice (page 18 in course description doc)
+Question: 1-8
 
 Lab exercise #1: Magpie
 http://apcs.mathorama.com/index.php?n=Main.MagpieLab
