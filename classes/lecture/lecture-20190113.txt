@@ -22,7 +22,7 @@ If it does not find it, please download Java SE JDK8 here: https://www.oracle.co
 Eclipse IDE Download: https://www.eclipse.org/eclipseide/, and getting started: https://www.eclipse.org/getting_started/
 
 5. create class and program in Eclipse
-Student (name, grade, age) class
+Student (name, grade, age) class  - draw.io
 TestApplication (main method)
 
 6. Java subset
