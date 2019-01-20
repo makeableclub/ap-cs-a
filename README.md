@@ -37,6 +37,18 @@ List: https://docs.oracle.com/javase/8/docs/api/java/util/List.html
 
 ArrayList: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 
+### Java Tutorials from Oracle
+Index: https://docs.oracle.com/javase/tutorial/,
+not necessarily that you need them for AP CS-1 course, but you may read them for fun!
+
+Introduction to Java: https://docs.oracle.com/javase/tutorial/getStarted/index.html
+
+The Language:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html
+https://docs.oracle.com/javase/tutorial/java/index.html
+
+Not covered, but nice to know Java Collections: https://docs.oracle.com/javase/tutorial/collections/index.html
+
 
 ## Lecture and homework
 

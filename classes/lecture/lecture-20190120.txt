@@ -1,14 +1,22 @@
 1. Java subset
 https://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-a-java-subset.pdf
-integer,
-String,
-List interface,
-ArrayList
+
+integer, primitive data type and its representation
+
+String,  https://docs.oracle.com/javase/8/docs/api/java/lang/String.html, https://docs.oracle.com/javase/tutorial/java/data/strings.html
+
+List interface, https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html
+
+ArrayList class, https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
 Class (and Driver/Runner program)
 
+
 2. object-oriented program
-https://en.wikipedia.org/wiki/Object-oriented_programming
+Textbook-like materials:
 https://docs.oracle.com/javase/tutorial/java/concepts/index.html
+
+https://en.wikipedia.org/wiki/Object-oriented_programming
 
 http://www.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html
 properties (fields, variables), behaviors (methods),
