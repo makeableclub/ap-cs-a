@@ -1,0 +1,91 @@
+1. Software development life cycle - design & process
+water-fall: https://en.wikipedia.org/wiki/Waterfall_model
+https://www.tutorialspoint.com/sdlc/sdlc_overview.htm
+
+agile / scrum / peer programming / quick iteration / TDD
+https://en.wikipedia.org/wiki/Systems_development_life_cycle
+
+OOP / UML: https://en.wikipedia.org/wiki/Unified_Modeling_Language
+
+top-down / bottom-up
+
+Test and Analysis
+
+
+2. Recursion
+- base condition to terminate;
+- recursion to drive to the base condition
+- helper, private recursion
+
+Iteration: (flat repetition)
+for-loop, while, foreach
+
+Recursion: (nested repetition)
+n! = n * (n-1) *... * 1
+0! = 1
+
+// iterative
+void factorial(int N) {
+    int result = 1;
+    for(int i=1; i<=N; i++) {
+        result = result * i;
+    }
+    return result;
+}
+1 * 2 * 3 .... * N
+
+// recursive
+void recFactorial(int N) {
+    // 1. base condition to stop recursion
+    if ( N == 0 ) {
+        return 1;
+    }
+    // 2. recursion, which leads to base condition
+    return N * recFactorial(N-1);
+}
+
+The runtime execution example:
+5!
+recFactorial(5)
+5 * recFactorial(4)
+5 * 4 * recFactorial(3)
+5 * 4 * 3 * recFactorial(2)
+5 * 4 * 3 * 2 * recFactorial(1)
+5 * 4 * 3 * 2 * 1 * recFactorial(0)
+5 * 4 * 3 * 2 * 1 * 1
+
+
+3. Sorting & Searching
+
+Animations of algorithms:
+https://www.cs.usfca.edu/~galles/visualization/Search.html
+https://www.toptal.com/developers/sorting-algorithms
+
+Selection, Insertion, Merge sort, Quick sort
+https://en.wikipedia.org/wiki/Merge_sort
+
+Sequential, Binary search
+Analysis: best, worse, average case
+Time / Space
+
+sequential: O(N)
+for(int i=0; i<N; i++) {
+}
+
+binary Search: log2(N)
+values[HIGH];
+binarySearch(int low, int high, int value)
+{
+    if( low >= high ) {
+        return "no found";
+    }
+    int mid = (low + high)/2;
+    if( values[mid] == value)
+        return mid;
+    else if ( value < values[mid]) {
+        return binarySearch(low, mid, value);
+    }
+    else {
+        return binarySearch(mid, high, value);
+    }
+}
