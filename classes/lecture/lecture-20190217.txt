@@ -1,0 +1,174 @@
+Start the deep dive on various topics
+
+1. Content Index, and Essentials page (before Preface at page XI)
+
+2. Java Features
+Look at an example java file - MuseOSCListener.java
+
+package - dot notation
+import - one class, or all classes in a package
+class, method
+keywords (reserved words) - class, public, static, void, final - all lower cases
+* static - scope at class level, not object. may not access any instance variables or objects of a class.
+java doc / comment - @param, @return
+
+identifier: variable, parameter, constant, method, class --- that needs a name to refer to
+    made of a sequence of:  letters + digits + underscore, can not start with digit
+    case sensitive
+    concise, self-documenting.
+    convention: camelCase, class/interface with capitalized first character, no keywords
+
+types: int, boolean, double
+    declaration
+    storage - int: precision bits; double - round-off error
+        no exception for floating-point operation, but produces NaN, +/-Infinity
+6.0 / 0.0
+
+int 4 bytes
+    BYTE (8bits)  _ _ _ _ _ _ _ _
+        0000 0000  => 256   00000000 - 11111111
+        0000 0001
+        ?0000000 00000000 00000000 00000000  ==> 2^32  ?=0+, ?=1-
+        00000000 00000000 00000000 00000001
+        00000000 00000000 00000000 00000010    4294967295
+unsigned int 2^32 - 1
+signed int 2^31 - 1
+
+base * 2^exp --
+double 8 bytes = 64 bits:  53 bits , 11 bits exp
+
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+double aNum = 3.5;
+double aBignumber = 7.0;
+int div = 2;
+
+aBignumber / div ---> 3.5
+if( aNum == aBignumber / div) {
+
+}
+
+    HEX, BIN, OCT
+    binary 0, 1
+    0000 0000
+    hex 0 - 9 A B C D E F --> 16
+    dec 0 - 9
+    bin 0 - 1
+
+    #23CCDD
+    RGB (255, 255, 255)   0 - 255:  FF 15x16 + 15 = 255
+
+
+operators:
+
+1. arithmetic (type promotion, casting, precedence)
+int intA = 2;
+int intB = 5;
+double dA = 2.0;
+double dB = 5.0;
+int intC = 0;
+double dC = 0.0;
+
+intB / intA = 2
+intB % intA = 1
+intB / dA = 2.5
+dB / intA = 2.5
+
+intC = dA;          /// can't do that!
+intC = (int) dA;
+
+x dC = (double) intB / intA;
+* / %    ==> + -
+
+2. relational (boolean expression, compare primitive type not user-defined type,
+trap in floating-point comparison!!)
+
+!=, ==, >, <,
+
+
+
+3. logical (compound boolean expression, short-circuit
+
+&&, ||, !
+
+
+if( a!=0 || b/a ) {
+  print()
+}
+else {
+
+}
+
+&&  T     F
+T   T     F
+F   F     F
+
+||  T     F
+T   T     T
+F   T     F
+
+
+4. assignment
+a = b
+a += b  ==> a = a + b
+a %= b
+
+5. ++, --  (postfix, prefix)
+
+for( i=0; i<N; i++) {
+
+}
+
+++i
+
+i=5;
+print("this is result: i++"); 5
+print("this is result: ++i"); 6
+
+
+Input/Output, escape sequence  \\, \"  \n, \r, \t
+a = ... //
+print()
+println("he said: \"just use \\ to do escape\", but \n is a new line. ");
+he said: "just use \ to do escape", but
+ is a new line
+
+
+Control structures
+1. conditional:
+    if
+    if...else
+    extended if
+    if() {}
+    else if() {}
+    else if() {}
+
+    nested if,  dangling else!!!
+    if()
+        if()
+    else
+
+        if() {
+            doOnething
+        }
+
+
+2. iteration
+    for-loop: boundary condition, go up/down, scope, not to change "i" in program
+    for( i=0; i<N; i++) {
+    }
+    enhanced for-loop
+
+    while() loop: never, once, or infinity. need something to lead to termination
+    i=0;
+    while(i<N) {
+      ....
+      i++;
+    }
+
+    nested loop
+
+Error and Exception
+
+
+
+References
