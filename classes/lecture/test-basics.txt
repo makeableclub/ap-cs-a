@@ -1,0 +1,104 @@
+// Scavenger hunt: find all the errors in the program!
+
+public Class TestBasics {
+    public static Final double _PI = 3.1415926f;
+    public static int int_zero = 0;
+    public static final string LABEL;
+    public double point_0 = 0.0f;
+
+    private static String SEPARATOR;
+    private Int int_large = 100;
+    double double_large = 10000.0;
+
+    public void assign() {
+        LABEL = "@#";
+        SEPARATOR = "-";
+        _PI = 3.14f;
+        int_large = Math.power(2, 35);
+    }
+
+    public void calculate1 {
+        double zero1 = int_zero - point_0;
+        int zero2 = 0 - point_0;
+    }
+
+    public static calculate2() {
+        int triple = int_large * 3;
+        int div = double_large / int_large;
+        double area2 = _PI * 2 * 2;
+    }
+
+    public void calculate3() {
+        int huge = int_large / int_zero;
+        int 1_zero = _PI * int_zero;
+        double 2_zero = int_zero / point_0;
+        double void = double_large / point_0;
+    }
+
+    public static printDigits(int num, int radix) {
+        int d = num % radix;
+        System.out.println(d);
+        int remaining = num / radix;
+        while( remaining > 0 ) {
+            System.out.println( remaining % radix);
+            remaining = remaining / radix;
+        }
+    }
+}
+
+
+public class AnotherClass() {
+    public static void compare(int int1, double d2) {
+        if( TestBasics.int_zero == int1) {
+            System.out.println(int1 + " is integer 0");
+        }
+        if( TestBasics.point_0 == d2) {
+            System.out.println(d2 + " is double 0.0f");
+        }
+        if( TestBasics.int_zero == 0 || TestBasics.point_0 == d2) {
+            System.out.println(d2 + " is double 0.0f");
+        }
+        if( TestBasics.int_zero == 1 || TestBasics.point_0 == d2) {
+            System.out.println(d2 + " is double 0.0f");
+        }
+        if( TestBasics.int_zero == 0 && TestBasics.point_0 == d2) {
+            System.out.println(d2 + " is double 0.0f");
+        }
+        if( TestBasics.int_zero == 1 && TestBasics.point_0 == d2) {
+            System.out.println(d2 + " is double 0.0f");
+        }
+        if( TestBasics._PI == TestBasics._PI * 1.0f ) {
+            System.out.println("is equal");
+        }
+        if( TestBasics.LABEL == "@#" ) {
+            System.out.println("The label is @#");
+        }
+    }
+
+    public void change() {
+        TestBasics.LABEL = "&#";
+        TestBasics.SEPARATOR = ".";
+        TestBasics.int_zero = 1;
+    }
+
+    public void convert() {
+        TestBasics.printDigits(123, 10);
+        TestBasics.printDigits(123, 2);
+        TestBasics.printDigits(123, 8);
+        TestBasics.printDigits(123, 16);
+    }
+}
+
+
+some data conversion:
+binary: 11010101 -> decimal
+binary: 11010101 -> hexdecimal
+binary: 11010101 -> octal
+
+decimal: 234 -> binary:
+decimal: 234 -> octal:
+decimal: 234 -> hexdecimal:
+
+hexdecimal: E8 -> binary:
+hexdecimal: E8 -> octal:
+hexdecimal: E8 -> decimal:

@@ -1,0 +1,82 @@
+Object-oriented Programming
+abstraction, encapsulation, inheritance, polymorphism
+
+object: state + behavior
+-- general concept of things in real world, to be represented in programming
+-- a way to abstract the complex real world into "object", with relationships and interactions
+
+class: instance variables + methods
+-- software blueprints representing a type of objects
+-- private instance variables + access/mutator methods to isolate/encapsulate variables
+
+inheritance: define the "is-a" relationship between types of objects (i.e. classes).
+        This is a design time consideration.
+
+polymorphism: a method in superclass can be overridden in multiples subclasses.
+        This is a run-time mechanism to find the appropriate method for a particular object in the class hierarchy.
+
+
+Example code about objects and classes
+1. class structure, modifier public, private (protected), static
+2. method signature
+    access [abstract | static] type methodName ( parameter list )
+    ------ ------------------- ---- ----------   ---------------
+    public void setBalance (String pass, double amount)
+3. method types:
+    constructor:  default, parameterized
+    accessor (getter, just read a value or state):
+    mutator (setter, or other making a change):
+4. static vs instance methods
+    "interestRate" example
+    "main" in driver class
+5. method overload
+    method signature:  same method name but different parameter list
+    multiple constructors
+6. method override
+    method in subclass over-ride the same method in superclass
+    can not reduce visibility!
+7. scope
+    class, instance, method, local, parameter
+    this
+8. method parameters
+    formal (dummy), actual
+    number of parameters, corresponding type of parameter
+9. passing parameters
+    passing by value, passing by reference
+    primitive type, object type
+
+Inheritance
+1. class hierarchy: superclass - subclass
+
+subclass inherits characteristics of its superclass, and with additional data and methods, so it has more stuff;
+
+specifically:
+inherits public (and protected) variables and methods,
+what about "private" variables and methods,
+may redefine a method (method overriding, either full or partial overriding with super call)
+
+"private" means private, so private method can not overridden in subclass, no visible to subclass at all;
+
+"constructor" method does not have "type", and are never inherited. But could be implicitly generated in certain cases (with default constructor). Can call "super()", but needs to be the first line in subclass constructor
+
+code-reuse
+is-a relationship
+
+2. declaring subclass objects
+polymorphism / dynamic binding(late binding) at run-time
+
+subclass calls to superclass method, which invokes another method that has been overridden, by polymorphism, that method being executed is from the subclass
+
+Downcasting:  cast a superclass down to a more concrete subclass
+BankAccount bAcct = new BankAccount();  bAcct.deposit(...) v
+Account acct = new BankAccount();       acct.deposit(...) x
+                                        ((BankAccount)acct).deposit(...) v
+
+3. Abstract class (abstract keyword, method with no implementation, can not make objects by "new ...")
+
+4. Interface (implements)
+defines a collection of methods without implementation (to be implemented by class having this interface)
+
+extends <SuperClass> implements <Interface1, Interface2, ...>
+
+No instantiation with "new AbstractClass()", nor "new Interface()"
