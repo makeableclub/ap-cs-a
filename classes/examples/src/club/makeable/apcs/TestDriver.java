@@ -9,12 +9,16 @@ public class TestDriver {
 		// BankAccount bankAcct = new BankAccount();	// why doesn't work?
 		BankAccount bankAcct = new BankAccount("B123", "super$ecret");
 		bankAcct.setName("Chase Bank");
-		bankAcct.setBalance(5.60);
+		double money = 5.60;
+		bankAcct.setBalance(money);
+		
 		System.out.println("Bank account has balance: $" + bankAcct.getBalance());
 		
 		StockAccount stockAcct = new StockAccount();	// why this constructor work?
 		stockAcct.setName("Raymond's Stock Account");
 		System.out.println("Stock account has balance: $" + stockAcct.getBalance());		
+		
+		Account.getRicherAccount(bankAcct, stockAcct);
 	}
 
 }

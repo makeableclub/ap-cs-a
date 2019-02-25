@@ -13,6 +13,7 @@ public class BankAccount extends Account {
 		super(id, pass);
 		
 		// setType(Account.TYPE_BANK);
+		// do something more
 	}
 	
 	/**
@@ -21,6 +22,12 @@ public class BankAccount extends Account {
 	@Override
 	public int getType() {	// TODO: switch the visibility marker "public ~ protected"
 		return Account.TYPE_BANK;
+	}
+
+	@Override
+	public double getBalance() {
+		double balance = super.getBalance() * (1+interestRate);
+		return balance;
 	}
 
 	/**
@@ -56,7 +63,7 @@ public class BankAccount extends Account {
 				return true;
 			}
 		}
-		
+
 		return false;
 	}
 }

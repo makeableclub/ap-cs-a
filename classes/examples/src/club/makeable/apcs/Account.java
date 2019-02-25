@@ -1,5 +1,7 @@
 package club.makeable.apcs;
 
+
+
 public abstract class Account {
 	public static final int TYPE_BANK = 1;
 	public static final int TYPE_STOCK = 2;
@@ -14,6 +16,7 @@ public abstract class Account {
 	 * Default constructor
 	 */
 	public Account() {
+		// nothing
 	}
 	
 	/**
@@ -65,6 +68,7 @@ public abstract class Account {
 
 
 	protected void setBalance(double balance) {
+		balance = 4.50;
 		this.balance = balance;
 	}
 
@@ -73,7 +77,8 @@ public abstract class Account {
 	 * 
 	 * @return	an integer to represent the account type
 	 */
-	protected abstract int getType();	// TODO: Abstract method to be implemented by subclass
+	protected abstract int getType();
+	// TODO: Abstract method to be implemented by subclass
 	
 	
 	/**
@@ -87,6 +92,7 @@ public abstract class Account {
 	
 	/**
 	 * A static method to demo: 1. how to invoke, 2. object parameters in method call
+	 * 
 	 * @param acct1
 	 * @param acct2
 	 * @return
