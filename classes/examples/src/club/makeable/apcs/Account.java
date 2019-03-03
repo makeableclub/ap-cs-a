@@ -90,6 +90,55 @@ public abstract class Account {
 //		this.type = type;
 //	}
 	
+	
+	/**
+	 * Add money to account
+	 * 
+	 * @param pass	The password to be matched with account
+	 * @param amount The amount to be added to the account
+	 */
+	public void deposit(String pass, double amount) {
+		if(pass!=null && pass.equals(password)) {
+			balance += amount;
+		}
+	}
+	
+	/**
+	 * Withdraw money from account
+	 * 
+	 * @param pass	The password to be matched with account
+	 * @param amount The amount to be withdrew
+	 * @return	a boolean: true to indicate successfully withdraw, 
+	 * 					   false to indicate failed to withdraw due to insufficient amount 
+	 * 					   or mismatched password.
+	 */
+	public boolean withdraw(String pass, double amount) {
+		// check password to match
+		if(pass!=null && pass.equals(password)) 
+		{
+			// check sufficient fund
+			if( balance > amount ) {
+				balance = balance - amount;
+				return true;
+			}
+		}
+
+		return false;
+	}
+	
+	/**
+	 * 
+	 * @param acct1
+	 * @param acct2
+	 */
+	public boolean transfer(String pass, double amount, Account fromAcct, Account toAcct) {
+		if( fromAcct.withdraw(pass, amount) ) {
+			toAcct.deposit(pass, amount);
+			return true;
+		}
+		return false;
+	}
+	
 	/**
 	 * A static method to demo: 1. how to invoke, 2. object parameters in method call
 	 * 

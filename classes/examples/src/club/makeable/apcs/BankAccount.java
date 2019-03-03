@@ -1,6 +1,7 @@
 package club.makeable.apcs;
 
-public class BankAccount extends Account {
+public class BankAccount extends Account
+{
 	private double interestRate;	// TODO: make it static?
 
 	/**
@@ -24,46 +25,26 @@ public class BankAccount extends Account {
 		return Account.TYPE_BANK;
 	}
 
-	@Override
-	public double getBalance() {
+	/**
+	 * Get expected payment with interest payout
+	 * 
+	 * @return
+	 */
+	public double getBalanceWithInterest() {
 		double balance = super.getBalance() * (1+interestRate);
 		return balance;
 	}
 
-	/**
-	 * Add money to account
-	 * 
-	 * @param pass	The password to be matched with account
-	 * @param amount The amount to be added to the account
-	 */
-	public void deposit(String pass, double amount) {
-		if(pass!=null && pass.equals(getPassword())) {
-			double newAmount = getBalance() + amount;
-			setBalance(newAmount);
-		}
-	}
 	
 	/**
-	 * Withdraw money from account
+	 * calculate bank account interest payment
 	 * 
-	 * @param pass	The password to be matched with account
-	 * @param amount The amount to be withdrew
-	 * @return	a boolean: true to indicate successfully withdraw, 
-	 * 					   false to indicate failed to withdraw due to insufficient amount 
-	 * 					   or mismatched password.
+	 * @return
 	 */
-	public boolean withdraw(String pass, double amount) {
-		// check password to match
-		if(pass!=null && pass.equals(getPassword())) {
-			double currAmount = super.getBalance();
-			
-			// check sufficient fund
-			if( currAmount > amount ) {
-				super.setBalance(currAmount-amount);
-				return true;
-			}
-		}
-
-		return false;
+	public double getInterestPayment() {
+		double amount = getBalance() * interestRate;
+		
+		return amount;
 	}
+
 }

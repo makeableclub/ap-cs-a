@@ -45,40 +45,5 @@ Example code about objects and classes
     passing by value, passing by reference
     primitive type, object type
 
-
-
-Inheritance
-1. class hierarchy: superclass - subclass
-
-subclass inherits characteristics of its superclass, and with additional data and methods, so it has more stuff;
-
-specifically:
-inherits public (and protected) variables and methods,
-what about "private" variables and methods,
-may redefine a method (method overriding, either full or partial overriding with super call)
-
-"private" means private, so private method can not overridden in subclass, no visible to subclass at all;
-
-"constructor" method does not have "type", and are never inherited. But could be implicitly generated in certain cases (with default constructor). Can call "super()", but needs to be the first line in subclass constructor
-
-code-reuse
-is-a relationship
-
-2. declaring subclass objects
-polymorphism / dynamic binding(late binding) at run-time
-
-subclass calls to superclass method, which invokes another method that has been overridden, by polymorphism, that method being executed is from the subclass
-
-Downcasting:  cast a superclass down to a more concrete subclass
-BankAccount bAcct = new BankAccount();  bAcct.deposit(...) v
-Account acct = new BankAccount();       acct.deposit(...) x
-                                        ((BankAccount)acct).deposit(...) v
-
-3. Abstract class (abstract keyword, method with no implementation, can not make objects by "new ...")
-
-4. Interface (implements)
-defines a collection of methods without implementation (to be implemented by class having this interface)
-
-extends <SuperClass> implements <Interface1, Interface2, ...>
-
-No instantiation with "new AbstractClass()", nor "new Interface()"
+    In Java, it is "pass-by-value" ONLY!
+    What happens when passing object? It is making a copy of the object reference (address) and give it to a new variable (method parameter)

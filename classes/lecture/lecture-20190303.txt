@@ -1,0 +1,51 @@
+Inheritance
+1. class hierarchy: superclass - subclass
+
+subclass inherits characteristics of its superclass, and with additional data and methods, so it has more stuff;
+
+specifically:
+inherits public (and protected) variables and methods,
+what about "private" variables and methods,
+may redefine a method (method overriding, either full or partial overriding with super call)
+override method - can not reduce visibility in subclass!
+
+"private" means private, so private method can not be overridden in subclass, no visible to subclass at all;
+private / protected / public variables:
+
+"constructor" method does not have "type", and are never inherited. But could be implicitly generated in certain cases (with default constructor). Can call "super()", but needs to be the first line in subclass constructor
+-- explain in Account, BankAccount and StockAccount
+
+
+code-reuse
+is-a relationship
+has-a relationship (for composition)
+
+2. declaring subclass objects
+polymorphism / dynamic binding(late binding) at run-time
+-- Look at TestDriver program, change both account to superclass Account
+
+subclass calls to superclass method, which invokes another method that has been overridden, by polymorphism, that method being executed is from the subclass
+-- explain transfer() method
+
+Downcasting:  cast a superclass down to a more concrete subclass
+BankAccount bAcct = new BankAccount();  bAcct.getInterestPayment() v
+Account acct = new BankAccount();       acct.getInterestPayment() x
+                                        ((BankAccount)acct).getInterestPayment() v
+
+
+3. Abstract class (abstract keyword, method with no implementation, can not make objects by "new ...")
+-- explain Account class:  its declaration and usage
+
+4. Interface (implements)
+defines a collection of methods without implementation (to be implemented by class having this interface)
+-- implements Comparable, Taggable
+
+extends <SuperClass> implements <Interface1, Interface2, ...>
+-- can extend/inherit from only one superclass! but can implement from multiple interfaces!
+
+No instantiation with "new AbstractClass()", nor "new Interface()"
+
+5. Abstract class vs Interface
+Abstract class usually represents a generic entity (with some properties and some behaviors that may not well defined yet);
+Interface usually abstracts a set of actions or behaviors, and can be implemented by varieties of entities, who would like to confirm to such behaviors.
+-- look java doc on tree/hierarchy of java.lang.*, and java.util.*
