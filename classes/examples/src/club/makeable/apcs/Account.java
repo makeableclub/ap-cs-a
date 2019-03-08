@@ -2,7 +2,7 @@ package club.makeable.apcs;
 
 
 
-public abstract class Account {
+public abstract class Account implements Comparable<Account>{
 	public static final int TYPE_BANK = 1;
 	public static final int TYPE_STOCK = 2;
 	
@@ -68,7 +68,6 @@ public abstract class Account {
 
 
 	protected void setBalance(double balance) {
-		balance = 4.50;
 		this.balance = balance;
 	}
 

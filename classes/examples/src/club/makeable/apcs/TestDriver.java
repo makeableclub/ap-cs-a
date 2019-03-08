@@ -17,22 +17,33 @@ public class TestDriver {
 	//
 	public static void main(String[] args) {
 		// BankAccount bankAcct = new BankAccount();	//TODO: why doesn't work?
-		BankAccount bankAcct = new BankAccount("B123", "super$ecret");
+		Account bankAcct = new BankAccount("B123", "super$ecret");
 		bankAcct.setName("Chase Bank");
-		double money = 5.60;
+		double money = 105.60;
 		bankAcct.setBalance(money);
+		((BankAccount)bankAcct).getInterestPayment();
+		
+		
+		Comparable bAcct = new BankAccount("", "");
+		
+		List<Comparable> list = 
+		
+		// Account acct = new Account();
 		
 		System.out.println("Bank account has balance: $" + bankAcct.getBalance());
 		
-		StockAccount stockAcct = new StockAccount();	//TODO: why this constructor work?
+		Account stockAcct = new StockAccount();	//TODO: why this constructor work?
 		stockAcct.setName("Raymond's Stock Account");
 		System.out.println("Stock account has balance: $" + stockAcct.getBalance());		
+		double b = stockAcct.getBalance();
 		
 		Account.getRicherAccount(bankAcct, stockAcct);
 		
 		//TODO: example for downcasting in actual method!
 		// checkInterestIncome(bankAcct);
 		// checkInterestIncome(stockAcct);
+		
+		bankAcct.transfer("super$ecret", 10.0f, bankAcct, stockAcct);
 		
 	}
 

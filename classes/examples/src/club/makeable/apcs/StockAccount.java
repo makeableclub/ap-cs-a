@@ -3,7 +3,6 @@ package club.makeable.apcs;
 public class StockAccount extends Account {
 	private double shares;	// TODO: getters and setters
 	private double prices;
-		
 	
 	@Override
 	public double getBalance() {
@@ -50,6 +49,12 @@ public class StockAccount extends Account {
 		}
 
 		return false;
+	}
+
+	@Override
+	public int compareTo(Account o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
