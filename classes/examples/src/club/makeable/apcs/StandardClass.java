@@ -122,6 +122,8 @@ public class StandardClass {
 			E get(int index);
 			E set(int index, E element);
 			E remove(int index);
+			
+			Loop, IndexOutofBounds
 		 */
 		
 		

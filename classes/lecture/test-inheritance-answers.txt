@@ -1,0 +1,17 @@
+1. abstract class, vs. interface
+when and what they are used for?
+similarity / difference?
+write class / interface code: declaration
+how to use it:  extends, implements, but never instantiates
+
+
+
+
+
+
+
+
+
+
+2. polymorphism and downcasting
+what is polymorphism?  why needs downcasting sometimes?
