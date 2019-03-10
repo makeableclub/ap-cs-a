@@ -1,0 +1,98 @@
+Java Standard Classes
+
+1. Object
+https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
+the ultimate superclass
+public String toString() { // default is "classname@hashcode" }
+public boolean equals(Object other) { // default is "same", (this==other) is true }
+public int hashCode()
+
+meant to be overridden, to reflect your own class, such as:
+
+don't use "==" to test if objects are equal,
+"equals" could be just equal, not necessarily same!
+
+equals(Object other) - other is "non-null".  If null, then not equal
+
+2. String
+String s1 = "abc";
+// string literals. special case for String to be initialized just like primitive type
+String s2 = new String("abc");
+String s3 = "abc";
+String s4 = "bc";
+String s5 = "a" + "bc";
+// String has "+" as concatenation operator, not for other objects
+// e.g. String result = 3 + 5;
+// error: can't assign int -> String, but can use String.valueOf(int);
+
+String comparison: the contents in a string
+str1.equals(str2)
+str1.compareTo(str2):  <0, =0, >0
+string order: ordering in dictionary (lexicographical)
+ASCII chart: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html
+0   - 48
+A   - 65
+a   - 97
+
+public int length()
+public String substring(int startIndex)
+public String substring(int startIndex, int endIndex)
+public int idexOf(String str)
+"abcdefg hijklmn opqrst uvwxyz"
+// See "StandardClass.java" for various test cases!
+
+3. Wrapper class for primitive type
+int, double, boolean
+Why need Wrapper?  The container or collection class, such as List<Object> only take Objects!
+Integer and Double are immutable, not mutator methods.
+
+https://docs.oracle.com/javase/8/docs/api/?java/lang/Integer.html
+Integer intObj = new Integer(5);    // boxing
+int intPrimitive = intObj.intValue()   // unboxing
+int compareTo(Integer other)    // note the type!
+boolean equals(Object obj)      // note the type!
+String toString()
+
+https://docs.oracle.com/javase/8/docs/api/?java/lang/Double.html
+https://docs.oracle.com/javase/8/docs/api/?java/lang/Boolean.html
+
+
+4. Math class: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+all static methods and constant fields
+
+static int abs(int x)
+static double abs(double x)
+static double pow(double base, double exp)
+static double sqrt(double x)
+static double random()  // 0.0 <= result < 1.0
+
+Random real numbers range generation:
+lowValues <= x < highValues
+double x = Math.random() * (highValues - lowValues) + lowValues;
+
+Random integers
+lowInts <= i < highInts  (note: not including highInts)
+int i = (int)(Math.random() * (highInts - lowInts)) + lowInts
+for example, to produce 20 to 30 (inclusive):  20 <= k <= 30
+int k = (int)(Math.random()* (30+1-20)) + 20;
+
+5. List<E> interface, ArrayList<E> class
+List<E>: a list of elements of type E
+https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+methods:
+int size();
+E get(int index);
+E set(int index, E element);
+boolean add(E obj);
+void add(int index, E element);
+E remove(int index);
+
+loop: for-loop, while-loop, Iterator:  index range from 0 to size()-1
+index:  IndexOutofBoundsException!!!
+for "get, set, remove":   index < 0 || index >= size()
+for "add":  index < 0 | index > size()
+
+ArrayList<E>: an array implementation of List<E>, that the size can grow and shrink at run-time. Comparing "array" vs "ArrayList"...
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+List<Student> students = new ArrayList<Student>();

@@ -41,11 +41,23 @@ public class Student {
 		this.grade = grade;
 	}
 
+	@Override
 	public String toString() {
 		String student = "Name=" + this.name;
 		student += " School=" + this.school;
 		student += " Grade=" + this.grade;
 		
 		return student;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Student other = (Student)obj;
+		
+		boolean isEqual = this.name.equalsIgnoreCase(other.getName()) 
+				&& this.school.equalsIgnoreCase(other.getSchool())
+				&& this.grade == other.grade;
+		
+		return isEqual;
 	}
 }

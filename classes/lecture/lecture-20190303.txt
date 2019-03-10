@@ -48,4 +48,7 @@ No instantiation with "new AbstractClass()", nor "new Interface()"
 5. Abstract class vs Interface
 Abstract class usually represents a generic entity (with some properties and some behaviors that may not well defined yet);
 Interface usually abstracts a set of actions or behaviors, and can be implemented by varieties of entities, who would like to confirm to such behaviors.
+
 -- look java doc on tree/hierarchy of java.lang.*, and java.util.*
+https://docs.oracle.com/javase/8/docs/api/java/lang/package-tree.html
+https://docs.oracle.com/javase/8/docs/api/java/util/package-tree.html

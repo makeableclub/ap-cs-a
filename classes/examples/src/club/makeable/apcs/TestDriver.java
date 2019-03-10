@@ -1,4 +1,5 @@
 package club.makeable.apcs;
+import java.util.*;
 
 public class TestDriver {
 
@@ -26,7 +27,9 @@ public class TestDriver {
 		
 		Comparable bAcct = new BankAccount("", "");
 		
-		List<Comparable> list = 
+		List<Comparable> list = new ArrayList<Comparable>();
+		list.add(bankAcct);
+		list.add(bAcct);
 		
 		// Account acct = new Account();
 		
