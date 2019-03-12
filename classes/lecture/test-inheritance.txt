@@ -5,13 +5,40 @@ write class / interface code
 how to use them?
 
 
-
-
-
-
-
-
-
-
 2. polymorphism and downcasting
 what is polymorphism?  why needs downcasting sometimes?
+
+
+abstract class:
+instance variables + methods + abstract methods
+has certain implementation already for basic information about an Entity, but leave some aspect to be determined
+Entities extended from abstract class usually share the similarity (usually follow is-a relationship)
+
+interface:
+only abstract methods
+to define certain behaviors that anyone implements would need to follow such functionality; it is usually not about Entity, and interface can be adpoted by very different entities.
+
+public abstract class Machine {
+    private List<Object> components;
+
+    public void doWork() {
+        System.out.println("can do some general basic works");
+    }
+    // at least having one abstract method
+    public abstract void repair();
+}
+
+public interface Computable {
+    public void compute(Object obj);
+    public boolean canComputer();
+    public int getStatus();
+}
+
+// use them!
+public class FaxMachine extends Machine {
+    // must implement repair()
+}
+
+public class Calculator implements Computable {
+    // must implements all of methods
+}

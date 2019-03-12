@@ -41,6 +41,7 @@ public int idexOf(String str)
 "abcdefg hijklmn opqrst uvwxyz"
 // See "StandardClass.java" for various test cases!
 
+
 3. Wrapper class for primitive type
 int, double, boolean
 Why need Wrapper?  The container or collection class, such as List<Object> only take Objects!
@@ -54,6 +55,11 @@ boolean equals(Object obj)      // note the type!
 String toString()
 
 https://docs.oracle.com/javase/8/docs/api/?java/lang/Double.html
+Double dObj = new Double(5.0);    // boxing
+double dPrimitive = dObj.doubleValue()   // unboxing
+int compareTo(Double other)    // note the type!
+boolean equals(Object obj)      // note the type!
+String toString()
 https://docs.oracle.com/javase/8/docs/api/?java/lang/Boolean.html
 
 
