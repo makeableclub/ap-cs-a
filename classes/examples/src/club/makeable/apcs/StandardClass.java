@@ -44,8 +44,8 @@ public class StandardClass {
 		String s1 = "abc";		// string literals. special case for String to be initialized just like primitive type
 		String s2 = new String("abc");
 
-		String s3 = "abc"; 
-		String s4 = "dc"; 
+		String s3 = "abc";
+		String s4 = "dc";
 		String s5 = "a" + "bc";
 		// String s6 = 3+ 4;    // String.valueOf(3 + 4);
 
@@ -78,25 +78,30 @@ public class StandardClass {
 
 		System.out.println("indexOf(\"fgh\"): " + alphabet.indexOf("fgh"));
 		System.out.println("indexOf(\"fee\"): " + alphabet.indexOf("fee"));
-		
+
 		System.out.println("\"fghfghfgh\".indexOf(\"fgh\"): " + "fghfghfgh".indexOf("fgh"));
-		
+
 	}
 
 	private void testWrapperClasses() {
 		System.out.println("=== test wrapper classes ===");
 
 		// Integer
+		Integer integer1 = new Integer(30);
+		int intValue = integer1.intValue();
+		Integer integer2 = new Integer("23");
+		int temp = integer1.compareTo(integer1);
+		boolean isEqual = integer1.equals(integer2);
 		
 		// Double
-		
+
 		// Boolean
-		
+
 		// List<Integer> intList = new ArrayList<Integer>();
 		// int[] intArray = new int[10];
-		
+
 	}
-	
+
 	private void testMathClass() {
 		System.out.println("=== test Math class ===");
 
@@ -112,13 +117,13 @@ public class StandardClass {
 		System.out.println("Math.abs(3.0): " + Math.abs(3.0));
 		System.out.println("Math.pow(5.0, 3.2): " + Math.pow(5.0, 3.2));
 		System.out.println("Math.sqrt(5.0): " + Math.sqrt(5.0));
-		
-		// generate a random int between [20,50)
+
+		// generate a random int between [20,50), noting if it's inclusive at the boundary value
 		int result = (int)(Math.random()*(50-20)) + 20;
 		System.out.println("random(20,50): " + result);
-		
+
 	}
-	
+
 	private void testArrayList() {
 		System.out.println("=== test List interface, ArrayList class ===");
 
@@ -127,12 +132,12 @@ public class StandardClass {
 		studentList.add(new Student("name1", "school1", 5));
 		studentList.add(new Student("name2", "school2", 6));
 		studentList.add(2, new Student("name3", "school3", 6));
-		
+
 		System.out.println("List content 1: " + studentList);
-		
+
 		System.out.println(studentList.size());
 		System.out.println(studentList.get(1));
-		
+
 		studentList.set(1, new Student("name4", "school4", 8));
 		System.out.println("List content 2: " + studentList);
 
@@ -142,8 +147,8 @@ public class StandardClass {
 		Student[] stype = new Student[0];
 		Student[] students = (Student[]) studentList.toArray();
 		Student[] students2 = studentList.toArray(stype);
-		
-		
+
+
 		/*
 			boolean add(E obj);
 			void add(int index, E element);
@@ -151,11 +156,11 @@ public class StandardClass {
 			E get(int index);
 			E set(int index, E element);
 			E remove(int index);
-			
+
 			Loop, IndexOutofBounds
 		 */
-		
-		
+
+
 	}
 
 	public static void main(String[] args) {

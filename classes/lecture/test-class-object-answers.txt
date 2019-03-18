@@ -7,7 +7,7 @@ public class Student {
 
 }
 
-
+-- see Student.java in examples
 
 
 
@@ -67,6 +67,6 @@ public class TestParameter {
         System.out.println( int1 ); // 103
         System.out.println( str1 ); // "This is a short string."
         System.out.println( student1.toString() );  // "Allan", "North Gate"
-        System.out.println( studentList );  // 2 students 
+        System.out.println( studentList );  // 2 students
     }
 }

@@ -1,0 +1,52 @@
+1. Object comparisons, what to be aware of?
+equals()
+==
+toString()
+compareTo()
+
+
+2. String comparisons
+String s1 = "abcd";
+String s2 = new String("abcd");
+String s3 = "ab";
+String s4 = s3 + "cd";
+( s1 == s4 ) true
+( s1.equals(s2) ) true
+
+- string literals
+
+indexOf(), substring()
+
+
+
+3. Wrapper class:
+primitive <-> Wrapper object:  conversion, comparison
+
+Integer integer1 = new Integer(30);
+Integer integer2 = new Integer("3");
+int value = integer1.intValue();
+int temp = integer1.compareTo(integer1);
+boolean isEqual = integer1.equals(integer2);
+
+
+
+
+4. Generate a random integer between min to max, inclusive.
+
+(int)(Math.random()* (max + 1 - min)) + min
+
+
+5. Create a list of cities using ArrayList. Then traverse through the list and remove two of the cities.
+
+ArrayList<String> cities = new ArrayList<String>();
+cities.add("Beijing");
+cities.add("Walnut Creek");
+cities.add("Beijing");
+cities.add("Los Angeles");
+cities.add("San Francisco");
+
+for( int i=0; i < cities.size(); i++ ) {
+    if() {
+    break;
+    }
+}

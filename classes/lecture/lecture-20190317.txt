@@ -1,0 +1,91 @@
+Arrays
+
+1. Array vs. ArrayList
+int[] ints = new int[10];
+String[] strings = new String[20];
+ArrayList<Integer> integers = new ArrayList<Integer>();
+
+2. Array operations
+int[][] data = new int[5][8];
+
+declaration
+initialization
+
+length "property":  matrix.length;  matrix[r].length
+
+set / get to particular cell
+data[r][c] = 6
+
+insert / remove ** (structurally changed!)
+
+traversal (with checking on values, or indexes)
+for-loop; for-each
+
+reverse / swap elements
+arr[1, 2, 3, ... 10]
+index at 2, 7
+swap:
+temp = arr[m];
+arr[m] = arr[n];
+arr[n] = temp
+
+for (int i=0; i < arr.length/2; i++) {
+    swap(i, arr.length-1 - i);
+}
+
+array (or array element) pass as parameter to method call
+
+array as instance variable  (e.g. students have 6 periods of classes)
+String[] classes = new String[6];
+classes[0] = "Math";
+
+array of Class objects (e.g. school have 500 students)
+Student[] students = new Student[500];
+
+ArrayIndexOutOfBoundsException!
+
+
+3. 2-D Array (i.e. Matrix)
+
+theater / airline seat:  row / column
+seat[m][n]:  (0,0) -> (m-1,n-1), each element as seat[r][c]
+
+declaration
+initialization
+
+matrix is an array (first dimension) of rows, where each row is an array (second dimension) of elements
+matrix.length
+matrix[r].length
+
+traversal methods:
+A: row-column with nested for-loop
+for (int r=0; r < matrix.length; r++) {
+    for (int c=0; c < matrix[r].length; c++) {
+        // get to element: matrix[r][c], with its value and position
+    }
+}
+
+B: for-each loop
+for (int[] row : matrix) {
+    for (int element: row) {
+        element
+        // you get to each and every "element" in the matrix, but kind of lost "position"
+    }
+}
+
+C: row-by-row
+you have a "array-processing" method, such as "func(int[] arr)", to process a row of data
+then you just loop through all rows, to process each row, one by one
+for (int r=0; r < matrix.length; r++) {
+    func( matrix[r] );
+}
+
+D: diagonal
+matrix[i][i]
+matrix[i][SIZE-1-i]
+
+4. Shuffle, sort, search, remove duplicates, etc.
+
+
+** Different ways of removing elements in ArrayList
+https://netjs.blogspot.com/2015/08/how-to-remove-elements-from-arraylist-java.html
