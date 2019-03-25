@@ -1,0 +1,59 @@
+1. Program Design
+
+SDLC  (Software Development Life Cycle)
+specification,
+design,
+implementation,
+testing (debugging),
+maintenance
+
+models: waterfall
+agile, iterative, mvp (minimal viable product), lean startup, fail-fast, scrum
+CICD, micro-structure
+
+- OOP (abstraction, encapsulation, inheritance, polymorphism)
+classes (objects): nouns
+behaviors:  verbs
+relationships: inheritance, composition, delegation, interacting
+interfaces
+
+MVC (model, view, controller)
+
+UML (Unified Modelling Language)
+- intepret an UML diagram
+https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/
+https://www.lucidchart.com/pages/uml-class-diagram
+
+approach of implementing classes:
+buttom-up
+top-down
+
+approach of implementing methods:
+procedural abstraction: helper method
+information hiding
+stub method
+algorithm
+
+Check the list of Vocabulary Summary: https://github.com/makeableclub/ap-cs-a/blob/master/classes/barrons_ap_computer_science_2008-2009_1.pdf page 268.
+
+2. Program Analysis
+Program Correctness
+it works for "common" cases? works for "exception" cases that you can think of?
+
+Assertion
+At a step, you expected the execution should be at a certain state, and check it does!
+Precondition:
+    <statement>
+Postcondition:
+
+Program Efficiency
+The use of "CPU time", and "Memory storage"
+best case, worst case, average case
+
+big-O notation!
+
+constant: O(1):  irrelevant of N
+logN
+linear: 1 ... N
+N logN
+N^2
