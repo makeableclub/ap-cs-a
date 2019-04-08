@@ -1,0 +1,26 @@
+Recursion
+
+1. Basics:
+
+- base
+- condition leading to base
+- do something while in each recursive call
+- in each recursion, do something before, or after the recursive call?
+- base, or leading to base may not be obvious
+
+2. Wall through of recursion:
+Function call, and function stack!
+
+Fibonacci number:
+F(n) = F(n-1) + F(n-2)
+https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+
+3. Recursion of 2-dimension matrix
+- masking green color
+- recursion on matrix, e.g. edge layer -> going into the middle core
+
+4. Good or bad?
+- could be very clean, easier to reason, and concise code
+- tree traversal is a natural fit
+- searching & sorting algorithm (binary search, merge sort)
+- tricky, not leading to base (infinite), stack overflow, memory overflow
