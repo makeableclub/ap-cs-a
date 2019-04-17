@@ -7,8 +7,10 @@ public class RecursionDemo {
 		int seriesCount = 6;
 //		factorial(seriesCount);
 // 		fibonacci(seriesCount);
-		boolean isIt = isPalindrome("Ax Santa lived as a Devil at NASA");
-		System.out.println("Is it palindrome: " + isIt);
+//		boolean isIt = isPalindrome("Ax Santa lived as a Devil at NASA");
+//		System.out.println("Is it palindrome: " + isIt);
+		
+		printDigit(6125734);
 	}
 	
 	// N! = N * (N-1)! = N * (N-1) * (N-1-1)! ... = N * (N-1) * (N-2) * .... * 2  *1
@@ -42,6 +44,25 @@ public class RecursionDemo {
 		
 		System.out.println( "--- " + num + "  next=" + next);
 		return next;
+	}
+	
+	public static void printDigit(int num) {
+		if( num <= 0) {
+			return;
+		}
+
+		// 6125734
+		int digit = num % 10;
+		int remain = num / 10;
+		System.out.println(">>> digit=" + digit + " remain=" + remain);
+
+		// recursive
+		printDigit(remain);
+
+		System.out.println("<<< digit=" + digit + " remain=" + remain);
+		// processing
+		System.out.print(digit);
+
 	}
 	
 	// abcba
